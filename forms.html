@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2017/10/1509075909kelli-tungay-324329-768x512.jpg');
+            background-size: cover; /* Cover full screen */
+            background-repeat: no-repeat; /* Prevent tiling */
+            background-position: center; /* Center the image */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>REGISTRATION FORM</h1>
+    <hr>
+    <h2><marquee>REGISTRATIONS OPEN TILL 14/FEB/2025</marquee></h2>
+    <hr>
+
+    <form id="registrationForm" action="p1.php" method="post">
+
+        <h3>FIRST NAME:</h3>
+        <input type="text" name="firstname" value="Revati" readonly><br>
+
+        <h3>LAST NAME:</h3>
+        <input type="text" name="lastname" value="Gite" readonly><br>
+
+        <h3>DATE OF BIRTH:</h3>
+        <input type="text" name="dob" value="19/02/2006" readonly><br>
+
+        <label for="age">Age:</label>
+        <select name="age" id="age">
+            <option value="1">Minor (Under 18)</option>
+            <option value="2">Adult (18+)</option>
+            <option value="3">Senior Citizen (50+)</option>
+        </select><br>
+
+        <h3>GENDER:</h3>
+        <select name="gender" id="gender">
+            <option value="0">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <h3>SELECT YOUR EDUCATION QUALIFICATION:</h3>
+        <input type="radio" id="e1" name="education" value="B.TECH">
+        <label for="e1">B.TECH</label><br>
+        <input type="radio" id="e2" name="education" value="M.TECH">
+        <label for="e2">M.TECH</label><br>
+        <input type="radio" id="e3" name="education" value="PhD">
+        <label for="e3">PhD</label><br>
+
+        <h3>Email ID:</h3>
+        <input type="email" id="email" name="email" value="rg24csbob58@student.nitw.ac.in" required><br>
+
+        <h3>VISA DETAILS:</h3>
+        <label for="visaNumber">Visa Number:</label>
+        <input type="text" id="visaNumber" name="visaNumber" placeholder="Enter Visa Number" required><br>
+
+        <label for="visaExpiryDate">Visa Expiry Date:</label>
+        <input type="date" id="visaExpiryDate" name="visaExpiryDate" required><br>
+
+        <h3>STATE:</h3>
+        <select name="state" id="state">
+            <option value="1">Andaman and Nicobar Islands</option> 
+            <option value="2">Andhra Pradesh</option>
+            <option value="3">Arunachal Pradesh</option>
+            <option value="4">Assam</option>
+            <option value="5">Bihar</option>
+            <option value="6">Chandigarh</option>
+            <option value="7">Chhattisgarh</option>
+            <option value="8">Dadra and Nagar Haveli</option>
+            <option value="9">Gujarat</option>
+            <option value="10">Maharashtra</option>
+            <option value="11">Delhi</option>
+        </select><br>
+
+        <h3>COUNTRY:</h3>
+        <select name="country" id="country">
+            <option value="us">United States</option>
+            <option value="in">India</option>
+            <option value="uk">United Kingdom</option>
+        </select><br>
+
+        <h3>INSTITUTE TYPE:</h3>
+        <select name="institute" id="institute">
+            <option value="1">IIT</option>
+            <option value="2">NIT</option>
+            <option value="3">IIIT</option>
+        </select><br>
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
